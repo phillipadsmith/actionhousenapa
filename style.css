@@ -420,7 +420,6 @@ blockquote {
   margin-bottom: 32px;
 }
 .about-close {
-  font-style: italic;
   color: var(--white);
   font-size: clamp(1.1rem, 1.4vw, 1.25rem);
   margin-bottom: 28px;
