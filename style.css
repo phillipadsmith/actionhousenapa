@@ -301,17 +301,20 @@ section { position: relative; }
 .session-photo {
   height: 300px;
   overflow: hidden;
-  transition: transform 0.6s var(--ease);
+  position: relative;
 }
 .session-photo img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
   display: block;
+  transition: transform 0.6s var(--ease);
 }
 .session-photo-3 img { object-position: center center; }
-.session-card:hover .session-photo { transform: scale(1.03); }
+.session-card:hover .session-photo img { transform: scale(1.03); }
 .session-info { padding: 36px; border-top: 1px solid var(--rule); }
 .session-cat {
   font-family: var(--sans);
